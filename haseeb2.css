@@ -1,0 +1,31 @@
+
+.a
+{
+    
+    border: 9px solid rgb(31, 21, 58);
+    color: blue;
+    padding: 19px;
+}
+#one{
+    background-color: black;
+}
+#two{
+    background-color: yellow;
+}
+#three{
+    background-color: violet;
+}
+#four{
+    background-color: wheat;
+}
+header,footer
+{
+    text-align: center;
+    text-decoration: wavy;
+    text-transform: uppercase;
+    color: teal;
+    background-color: tan;
+    font-weight:bolder;
+    font-size: xx-large;
+    font-style: italic;
+}

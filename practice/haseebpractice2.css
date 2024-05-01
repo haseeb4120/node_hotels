@@ -1,0 +1,31 @@
+ul
+{
+    list-style-type: none;
+}
+li
+{
+    display: block;
+    height: 10px;
+    width: 30%px;
+    display: inline;
+    border: 8px splid salmon;
+}
+body
+{
+    background-image: url(bagdad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+div
+{
+    border-radius: 13px;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    color: aqua;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}

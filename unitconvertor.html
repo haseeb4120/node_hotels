@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="golra.jpg">
+    <title>Unit Convertor</title>
+    <style>
+       #hone
+       {
+        text-align: center;
+        color: green;
+        text-transform: uppercase;
+        border: 10px solid black;
+        border-radius: 55px;
+        
+       }
+       .convertor
+       {
+        
+        text-align: center;
+        
+        font-size: larger;
+        font-weight: bolder;
+        background-color: rgb(223, 236, 195);
+        border: 10px solid black;
+        padding: 10px;
+        border-radius: 55px;
+      
+       }
+       label
+       {
+        text-align: right;
+        text-transform: capitalize;
+        color: green;
+
+       }
+      
+       .c
+       {
+        display: inline-block;
+        
+       }
+       #equal{
+        font-size: xx-large;
+        
+       }
+       input
+       {
+        padding: 20px;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 55px;
+       }
+       
+    </style>
+
+</head>
+<body>
+    <div class="hone"><h1 id="hone">Unit convertor</h1></div>
+    <div class="convertor">
+        
+            <div class="c"><label for="feet">value in feet</label><br>
+            <input id="feet" type="number" value="1"></div>
+            <div class="c" id="equal">  =  </div>
+            <div class="c"><label for="inch">value in inches</label><br>
+            <input id="inch" type="number" value="12"></div>
+     
+    </div>
+
+    <script>
+        var feet=document.getElementById("feet")
+        var inchs=document.getElementById("inch")
+        feet.addEventListener("input",function()
+        {
+            let f=this.value;
+            let i=f*12
+            inch.value=i;
+        })
+        inch.addEventListener("input",abc)
+        function abc()
+            {
+                let i=this.value
+                let f=i/12;
+                
+                feet.value=f;
+            }
+        
+    </script>
+</body>
+</html>

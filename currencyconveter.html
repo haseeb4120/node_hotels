@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency-coverter</title>
+    <link rel="icon" href="currencyconvertor.jpg">
+    <style>
+        #pak
+        {
+            text-align: center;
+            color: green;
+            font-weight: bolder;
+        }
+        #hyp
+        {
+            text-align: center;
+            color: rgb(135, 161, 135);
+            font-weight: bolder;
+        }
+        #turkiya
+        {
+            text-align: center;
+            color: red;
+            font-weight: bolder;
+        }
+        #currency
+        {
+            text-align: center;
+            color: goldenrod;
+            font-weight: bolder;
+        }
+        #outer
+        {
+            display: inline;
+        }
+        .inner
+        {
+            display: inline-block;
+            
+        }
+        #innero
+        {
+            text-align: center;
+        }
+        #outerm
+        {
+           
+        }
+        label
+        {
+            text-decoration: solid;
+            font-weight: bolder;
+            text-shadow: 0.5px 0.5px gold;
+            
+
+        }
+        #l1
+        {
+            color: green;
+        }
+        #l2
+        {
+            color: red;
+        }
+        ::placeholder
+        {
+            color: rgb(202, 191, 127);
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="outerm"><div id="outer"><div id="pak">PAK </div><div id="hyp">-</div><div id="turkiya"> TURKIYA </div><br><div id="currency"> Currency Converter</div></div>
+    <div id="innero"><div class="inner">
+        <label id="l1" for="pak-pkr">PKR</label><br>
+        <input type="number" id="pak-pkr" placeholder="0RS" >
+    </div>    
+    <div class="inner">
+        <h1>=</h1>
+    </div>
+    <div class="inner">
+        <label id="l2" for="turkiya-pkr">LIRA</label><br>
+        <input type="number" id="turkiya-pkr" placeholder="0LIRA">
+    </div></div></div>
+    <script>
+        var pak=document.getElementById("pak-pkr")
+        var turk=document.getElementById("turkiya-pkr")
+        pak.addEventListener("input",abc)
+        function abc()
+        {
+            let p=this.value
+            let l=p*8.81
+            turk.value=l
+            if(Number.isInteger(0))
+            {
+                console.log(l)
+            }
+            else{
+                Number.round(l)
+                console.log(l)
+            }
+        }
+        turk.addEventListener("input",abc2)
+        function abc2()
+        {
+            let l=this.value
+            let p=l/8.81
+            pak.value=p
+        }
+
+    </script>
+</body>
+</html>

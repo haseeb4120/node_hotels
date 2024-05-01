@@ -1,0 +1,5 @@
+const colors =require("colors")
+console.log("haseeb".red)
+console.log("hhhhhhhhhhhhhhhhhhhhhhheehehehheheh".blue)
+// const chalk=require("chalks")
+// console.log(chalk.red("haseeebbbbbbbbb"))

@@ -1,0 +1,12 @@
+const fs=require("fs")
+const path=require("path")
+// const dirpath=path.join(__dirname,"crud")
+// // const fp="${dirpath}/abc.txt"
+fs.writeFileSync("crud/abc.txt","hello")
+console.log(fs.readFileSync("crud/abc.txt","utf-8"))
+fs.appendFileSync("crud/abc.txt","i am haseeb")
+console.log("file updated")
+fs.renameSync("crud/abc.txt","crud/aaaa.txt")
+console.log("file updated")
+fs.unlinkSync("crud/aaaa.txt")
+console.log("file is deleted")

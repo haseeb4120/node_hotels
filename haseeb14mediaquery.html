@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border: 8px solid rgb(153, 106, 45);
+        }
+        .item
+        {
+            border: 9px solid aqua;
+            margin: 2px;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+        }
+        @media(max-width:500px)
+        {
+            #container1
+            {
+                display: block;
+            }
+
+        }
+        .sbox
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: 9px solid aqua;
+            margin: 4px;
+        }
+        input[type='text']
+        {
+            border: 3px solid red;
+            margin: 4px;
+            height: 46px;
+        }
+        input[type='password']
+        {
+            border: 3px solid red;
+            margin: 4px;
+        }
+        ::placeholder
+        {
+            color: yellow;
+            background-color: rgb(155, 62, 62);
+            padding: 14px;
+            width: 100%;
+            
+        }
+        a[target]
+        {
+            font-size: xx-large;
+        }
+        a
+        {
+            border: 9px solid aqua;
+            display: block;
+            justify-content: center;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        *
+        {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item" id="container1">iphone</div>
+        <div class="item" id="container2">tablet</div>
+        <div class="item" id="container3">desktop</div>
+        <div class="item" id="container4">led</div>
+<div class="sbox">
+        <input type="text" placeholder="haseeb...">
+        <input type="password" placeholder="*******"></div>
+        <div class="ssbox">
+            <a href="#" target="_blank">helloooooooo</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        .containers
+        {
+            background-color: red;
+            border: 7px solid yellow;
+            width: 95%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+/*             
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+            align-items: center;
+
+        }
+        .item
+        {
+            border: 7px solid rgb(63, 63, 58);
+            background-color: rgb(105, 105, 56);
+            height: 100px;
+            width: 15%;
+            
+            cursor: grab;
+            text-align: center;
+            color: yellow;
+            text-transform: uppercase;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>flex box</h1>
+    <div class="containers">
+    <div class="item" id="box1">1st box</div>
+    <div class="item" id="box2">2nd box</div>
+    <div class="item" id="box3">3rd box</div>
+    <div class="item" id="box4">4th box</div>
+    <div class="item" id="box5">5th box</div>
+    <div class="item" id="box6">6th box</div>
+</body>
+</html>

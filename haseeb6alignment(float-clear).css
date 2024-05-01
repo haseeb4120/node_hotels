@@ -1,0 +1,42 @@
+.item
+{
+    border: 6px solid aqua;
+    margin: 2px;
+    padding: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgb(87, 11, 27);
+    text-decoration:underline;
+    font-size: medium;
+    font-weight: bolder;
+    font-style: italic;
+    
+    
+}
+*
+{
+    box-sizing: border-box;
+}
+#container
+{
+    width: 900px;
+    border: 5px;
+    margin: auto;
+    margin-top: 50px;
+    height: 1024px;
+    background-color: rgb(165, 110, 110);
+}
+#fruit
+{
+    float: left;
+    width: 48%;
+}
+#computer
+{
+    float: right;
+    width: 48%; 
+}
+#stationary
+{
+    clear: both;
+    width: 100%;
+}
